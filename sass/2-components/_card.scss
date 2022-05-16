@@ -1,0 +1,24 @@
+@use "../0-abstracts/colors" as c;
+@use "../0-abstracts/media" as m;
+
+
+.card {
+    margin: 3rem 1.5rem;
+    box-shadow: 0 0 0.5rem rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+@include m.for-desktop-up (1000px) {  
+    .card {
+        flex-direction: row;
+        gap: 4rem;
+        &:nth-child(1), &:nth-child(3) {
+            .cardimg {
+                order: 2;
+            }
+        }
+    }
+
+}

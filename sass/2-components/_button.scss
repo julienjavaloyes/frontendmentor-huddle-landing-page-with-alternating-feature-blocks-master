@@ -1,0 +1,32 @@
+@use "../0-abstracts/colors" as c;
+
+body {
+    button {
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 0 0.3rem rgb(230, 230, 230);
+        font-weight: 700;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .buttoncolorwhite {
+        background-color: white;
+        padding: 0.3rem 1.5rem;
+        margin: auto 0;
+        &:hover {
+            border: solid 0.1rem black;
+            padding: 0.2rem 1.5rem;
+        }
+    }
+    .buttoncolorpink {
+        background-color: c.$Pink;
+        color: white;
+        padding: 0.5rem 4rem;
+        margin: 1rem auto;
+        &:hover {
+            border: solid 0.1rem black;
+            padding: 0.4rem 4rem;
+        }
+    }
+}
